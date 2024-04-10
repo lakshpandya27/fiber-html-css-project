@@ -1,0 +1,109 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  menu {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+    .sitemap,
+    .resources,
+    .company,
+    .portfolios {
+      margin-top: 1rem;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  footer {
+    .sitemap,
+    .resources,
+    .company,
+    .portfolios {
+      margin-left: 3rem;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .hero {
+    .heroBtn {
+      margin-right: 1rem;
+    }
+  }
+  .whyFiber {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .bigCard__left {
+      padding-right: 2rem;
+    }
+  }
+  // .btn__wrapper a {
+  //   margin-left: 1rem;
+  // }
+  .text {
+    .text__wrapper + .text__wrapper {
+      margin-left: 12px;
+    }
+  }
+  .review {
+    // grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    // max-width: 100%;
+    .review__card {
+      margin-right: 2rem;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .whyFiber {
+    .review {
+      // grid-template-columns: 1fr;
+      max-width: 100%;
+      flex-direction: column;
+      .review__card {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .primary {
+    width: 100%;
+  }
+
+  .bigCard {
+    flex-direction: column;
+  }
+  .container {
+    max-width: 960px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    .hero__left {
+      .btn__wrapper,
+      .text {
+        flex-direction: column;
+      }
+      .btn__wrapper a {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
